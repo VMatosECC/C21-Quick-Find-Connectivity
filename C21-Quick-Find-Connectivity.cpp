@@ -4,7 +4,7 @@
 The "quick-find/lazy-union" algorithm, creates a simple data structure to solve 
 the dynamic connectivity problem.
 - It keeps a list of component (or cluster) identifiers for each element,
-  and the find operation checks whether two elements are in the same component
+  and the find operation checks whether two elements are in the same cluster
   by comparing their component identifiers.
 - The union operation merges two clusters by updating the component identifier
   of all elements in one cluster to match the other.
