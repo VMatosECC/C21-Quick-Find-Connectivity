@@ -1,17 +1,17 @@
 // C21-Quick-Find-Slow-Union-Connectivity-App.cpp 
 
 /* ------------------ Quick Find Algorithm ---------------------------------------
-The slow find-union algorithm, also known as the "quick-find/slow-union" algorithm,
-is a simple data structure to solve the dynamic connectivity problem.
-- It keeps a list of component identifiers for each element,
-  and the find operation checks if two elements are in the same component
+The "quick-find/lazy-union" algorithm, creates a simple data structure to solve 
+the dynamic connectivity problem.
+- It keeps a list of component (or cluster) identifiers for each element,
+  and the find operation checks whether two elements are in the same component
   by comparing their component identifiers.
-- The union operation merges two components by updating the component identifier
-  of all elements in one component to match the other.
+- The union operation merges two clusters by updating the component identifier
+  of all elements in one cluster to match the other.
 
 The complexity of the find operation is O(1), but the union operation is O(N),
 where N is the number of elements in the data structure.
-Ref. Robert Sedgewick, Kevin Wayne, Algorithms, 4th Edition, Addison-Wesley, 2011.
+Ref. Robert Sedgewick & Kevin Wayne, Algorithms, 4th Edition, Addison-Wesley, 2011.
 */
 
 #include <iostream>
