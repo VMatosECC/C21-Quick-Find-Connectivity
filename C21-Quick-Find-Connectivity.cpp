@@ -1,16 +1,13 @@
 // C21-Quick-Find-Slow-Union-Connectivity-App.cpp 
 
 /* ------------------ Quick Find Algorithm ---------------------------------------
-The "quick-find/lazy-union" algorithm, creates a simple data structure to solve 
-the dynamic connectivity problem.
-- It keeps a list of component (or cluster) identifiers for each element,
-  and the find operation checks whether two elements are in the same cluster
-  by comparing their component identifiers.
-- The union operation merges two clusters by updating the component identifier
-  of all elements in one cluster to match the other.
-
-The complexity of the find operation is O(1), but the union operation is O(N),
-where N is the number of elements in the data structure.
+The quick-find/lazy-union algorithm addresses the dynamic connectivity problem 
+using a simple data structure (id[] array or vector).  Each element is associated 
+with a component (or cluster) identifier.  The find operation determines if two elements 
+are connected by simply comparing their identifiers (O(1) time complexity).  
+The union operation joins two clusters by changing the identifier of every element 
+in one of the clusters to match the other (O(N) time complexity, where N is the 
+total number of elements).
 Ref. Robert Sedgewick & Kevin Wayne, Algorithms, 4th Edition, Addison-Wesley, 2011.
 */
 
